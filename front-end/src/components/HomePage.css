@@ -1,0 +1,118 @@
+/* General reset */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(45deg, #ffdd44 50%, #122240 50%);
+}
+
+/* Main Content */
+.main-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+
+/* Header (now inside main-content) */
+.header {
+    width: 100%;
+    background-color: #00274c;
+    color: #ffcb05;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 1.5rem;
+}
+
+.menu {
+    display: flex;
+    gap: 1rem;
+    margin-top: 0.5rem;
+}
+
+.menu button {
+    background-color: #ffdd44;
+    color: #122240;
+    border: none;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.logout-button {
+    margin-top: 1rem;
+    background-color: #ffdd44;
+    color: #122240;
+    border: none;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Categories */
+.categories {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    margin-top: 2rem; /* Add space above the categories */
+    padding: 1rem; /* Add padding around the buttons for a better visual look */
+}
+
+.categories button {
+    background-color: #122240;
+    color: #ffdd44;
+    border: none;
+    padding: 1rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.categories button.active {
+    background-color: #ffdd44;
+    color: #122240;
+}
+
+/* Content */
+.content {
+    width: 100%; /* Allow it to stretch across the full width */
+    max-width: 1200px; /* Optional, limit the maximum width */
+    background-color: rgb(27, 115, 202); /* Keep the background color */
+    padding: 2rem; /* Add padding for spacing */
+    border-radius: 8px; /* Round the corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Maintain the shadow */
+    margin: 1rem auto; /* Center the content horizontally */
+}
+
+
+/* Footer (fixed at the bottom) */
+.footer {
+    width: 100%;
+    position: fixed; /* Fix the footer to the viewport */
+    bottom: 0; /* Position it at the very bottom */
+    background-color: #122240;
+    color: #ffdd44;
+    text-align: center;
+    padding: 1rem;
+    z-index: 10; /* Ensure it appears above other content */
+    font-size: 0.9rem; /* Slightly smaller font for copyright text */
+    border-top: 1px solid #ffdd44; /* Optional: a subtle line above the footer */
+}
+
+/* Adjust the homepage-container to avoid content overlapping the footer */
+.homepage-container {
+    padding-bottom: 4rem; /* Add space equal to the footer's height */
+}
